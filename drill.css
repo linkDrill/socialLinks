@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* medida a partir da caixa */
+}
+
+html {
+  --bg-color: #edf2ff;
+  --text-color: #00082f;
+  --primary-color: #4263eb;
+  --primary-color-dark: #364fc7;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+body.degrade {
+  height: 100%;
+  background-image: linear-gradient(to bottom, #00082f, #4263eb);
+  --text-color: white;
+  background-attachment: fixed;
+}
+
+body.dark {
+  --bg-color: #00082f;
+  --text-color: white;
+}
+
+body.blue {
+  --bg-color: #cce6ff;
+  --text-color: #1f000b;
+  --primary-color: #5d97ce;
+  --primary-color-dark: #5d97ce;
+}
+
+.container {
+  text-align: center;
+  width: 350px;
+  margin: 60px auto;
+}
+
+img {
+  width: 100%;
+}
+
+img.avatar {
+  border-radius: 50%;
+  width: 50%;
+  padding: 3.7px;
+  border: 2px solid white;
+}
+h1 {
+  font-size: 32px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid yellow;
+  border-left: 2px solid yellow;
+  border-radius: 50%;
+}
+
+.username {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 48px 0;
+}
+
+ul li a {
+  display: flex;
+  height: 53px;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  transition: background 400ms;
+  border: 2px solid white;
+}
+
+/* button {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 53px;
+  display: flex;
+  background: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  transition: background 400ms;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+*/
+
+ul li a:hover {
+  background-color: var(--primary-color-dark);
+}
+
+footer {
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.6;
+  transition: opacity 400ms;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer a {
+  color: var(--text-color);
+}
+
+a.whatsicon img {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin-right: 6px;
+}
+
+a.prodicon img {
+  display: flex;
+  margin-right: 8px;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+}
+
+a.locIcon img {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+a.faceIcon img {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+a.instaIcon img {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  width: 100%;
+  display: block;
+  margin-left: 0px;
+  text-align: center;
+}
+
+servicesImg {
+  width: 100%;
+}
